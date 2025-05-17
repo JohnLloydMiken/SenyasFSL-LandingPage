@@ -1,4 +1,5 @@
 import UserIcon from '../assets/img/UserIcon.png'
+
 function NavBar(){
     return(
       <div className='flex justify-around items-center  h-full w-full grow shrink'>
