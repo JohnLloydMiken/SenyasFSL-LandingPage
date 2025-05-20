@@ -1,20 +1,16 @@
-import Header from './Header.jsx'
-import HeroBg from '../assets/img/HeroBg.png'
-import HeroBGRight from '../assets/img/HeroBGRight.png'
-import DownloadBanner from './DownloadBanner.jsx'
-import React, { useEffect } from 'react'
+import LandingSec from './LandingSec.jsx'
+
 function Hero(){
 
     
     return (
-
-       <div >
-            <Header></Header>
-            <DownloadBanner ></DownloadBanner>
-       </div>
+<>
+        <LandingSec></LandingSec>
+</>
            
         
     )
 }
+
 
 export default Hero;
