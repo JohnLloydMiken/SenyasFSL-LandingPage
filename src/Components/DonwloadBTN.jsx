@@ -7,7 +7,7 @@ function DownloadBTN ({ children = "DownLoad Now!", className = '', ...rest }){
 
         <>
          <button className={clsx(
-        '  rounded-full  text-[1.75rem] italic',
+        '  rounded-full   italic hover:underline hover:cursor-pointer',
         className
       )} 
         {...rest}

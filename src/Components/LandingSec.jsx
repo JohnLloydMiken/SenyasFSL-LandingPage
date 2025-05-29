@@ -5,6 +5,8 @@ import DownloadBanner from './DownloadBanner.jsx'
 import AboutUsIMG from '../assets/img/AboutUsIMG.png'
 import DownloadBTN from './DonwloadBTN.jsx'
 import Footer from './Footer.jsx'
+import Capibara from '../assets/img/Capibara.png'
+import Hand from '../assets/img/Hand.png'
 function LandingSec(){
 
     
@@ -60,36 +62,46 @@ function LandingSec(){
             </div>
     </div>
 
-    <div className='w-full max-w-full max-h-max flex justify-center items-center flex-col mb-12'>
+    <div className='w-full h-max  max-h-max flex justify-center items-center flex-col mb-12'>
         <div className='w-11/12  text-center mb-16'>
             <h1 className='text-[4.5rem]'>Key <span className='text-[#5F8B4C]'>Features</span></h1>
             <h4 className='text-[1.5rem]'>Innovative Features for an Engaging Sign Language Learning Experience</h4>
         </div>
       
-        <div className='w-11/12 h-max grid grid-cols-3 gap-4 '>
-            <div className='w-[500px] h-[200px] p-4 rounded-lg border border-black/30'>
-                <h5>AI-Powered Gesture Recognition</h5>
-                <p>Utilizing TensorFlow, the platform accurately detects and evaluates hand gestures, providing instant feedback to users.</p>
+        <div className='w-11/12 h-max grid grid-cols-3 gap-8 max-w-[2000px]  '>
+            <div className=' h-[350px] col-span-1 p-4 rounded-lg border border-black/30 shadow-[0_0px_20px_rgba(0,0,0,0.25)]  flex justify-start items-center flex-col hover:bg-[#FF9C00]'>
+                <h5 className='text-3xl mb-4 underline underline-offset-4 decoration-[#FF9C00] font-bold'>AI-Powered Gesture Recognition</h5>
+                <p className='text-[2rem] w-[86%] font-light text-justify'>Utilizing TensorFlow, the platform accurately detects and evaluates hand gestures, providing instant feedback to users.</p>
             </div>
-            <div className='w-[500px] p-4 rounded-lg border border-black/30'>
-                <h5>Gamified Learning Experience</h5>
-                <p>Lessons are designed in a game format, encouraging users to progress through interactive challenges, quizzes, and rewards.</p>
+            <div className=' col-span-1 p-4 rounded-lg border border-black/30 shadow-[0_0px_20px_rgba(0,0,0,0.25)]   flex justify-start items-center flex-col hover:bg-[#5F8B4C]'>
+                <h5 className='text-2xl mb-4 underline underline-offset-4 decoration-[#5F8B4C] font-bold'>Gamified Learning Experience</h5>
+                <p className='text-[2rem] w-[86%] font-light text-justify'>Lessons are designed in a game format, encouraging users to progress through interactive challenges, quizzes, and rewards.</p>
             </div>
-            <div className='w-[500px] p-4 rounded-lg border border-black/30 row-span-3'>
-                <h5>Comprehensive FSL Lessons</h5>
-                <p>Users receive instant feedback on their gestures and can track their learning progress through a built-in dashboard.</p>
+            <div className='  p-4 rounded-lg border border-black/30 row-span-3 shadow-[0_0px_20px_rgba(0,0,0,0.25)]   flex justify-start items-center flex-col hover:bg-[#FF8080]'>
+                <h5 className='text-2xl mb-4 underline underline-offset-4 decoration-[#FF8080] font-bold'>Comprehensive FSL Lessons</h5>
+                <p className='text-[2rem] w-[86%] font-light text-justify'>Users receive instant feedback on their gestures and can track their learning progress through a built-in dashboard.</p>
+                
+                <div style={{backgroundImage: `url(${Hand})`}} className='relative w-full h-full bg-no-repeat bg-cover top-4 '>
+                    <DownloadBTN className='bg-black text-[#FAF3E0] w-[250px] h-[4rem] absolute top-[28%] left-[25%]'></DownloadBTN>
+                </div>
             </div>
-            <div className='w-[500px] p-4 rounded-lg border border-black/30'>
-                <h5>Real-Time Feedback & Progress Tracking</h5>
-                <p>Covers basic to advanced Filipino Sign Language vocabulary, sentence construction, and real-life conversational scenarios.</p>
+            <div className='  h-[350px] col-span-1 p-4 rounded-lg border border-black/30 shadow-[0_0px_20px_rgba(0,0,0,0.25)]   flex justify-start items-center flex-col hover:bg-[#9A96F5]'>
+                <h5 className='text-2xl mb-4 underline underline-offset-4 decoration-[#9A96F5] font-bold'>Real-Time Feedback & Progress Tracking</h5>
+                <p className='text-[2rem] w-[86%] font-light text-justify'>Covers basic to advanced Filipino Sign Language vocabulary, sentence construction, and real-life conversational scenarios.</p>
             </div>
-            <div className='w-[500px] p-4 rounded-lg border border-black/30'>
-                <h5>Inclusive & User-Friendly Interface</h5>
-                <p>Designed to cater to beginners, educators, and individuals in the deaf and hard-of-hearing community with an intuitive and accessible UI.</p>
+            <div className=' col-span-1 p-4 rounded-lg border border-black/30 shadow-[0_0px_20px_rgba(0,0,0,0.25)]   flex justify-start items-center flex-col hover:bg-[#F0A1EB]'>
+                <h5 className='text-2xl mb-4 underline underline-offset-4 decoration-[#F0A1EB] font-bold'>Inclusive & User-Friendly Interface</h5>
+                <p className='text-[2rem] w-[86%] font-light text-justify'>Designed to cater to beginners, educators, and individuals in the deaf and hard-of-hearing community with an intuitive and accessible UI.</p>
             </div>
-            <div className=' p-4 rounded-lg col-span-2  border border-black/30'>
-                <h5>Interactive Challenges & Achievement System</h5>
-                <p>Users can participate in daily challenges, earn badges, and unlock new levels as they progress, making learning more motivating and rewarding.</p>
+            <div className=' h-[250px] p-4 rounded-lg col-span-2  border border-black/30 shadow-[0_0px_20px_rgba(0,0,0,0.25)]   flex justify-center items-center  hover:bg-[#FAF3E0]'>
+               
+               <div className='w-[70%] flex justify-start items-start flex-col hover:bg-[#FAF3E0]'>
+                    <h5 className='text-2xl mb-4 underline underline-offset-4 decoration-[#ED005B] font-bold'>Interactive Challenges & Achievement System</h5>
+                    <p className='text-[2rem] w-[86%] font-light text-justify'>Users can participate in daily challenges, earn badges, and unlock new levels as they progress, making learning more motivating and rewarding.</p>
+               </div>
+               <div className='w-[30%] h-full'>
+                    <img src= {Capibara} alt="" className='h-full' />
+               </div>
             </div>
         </div>
 

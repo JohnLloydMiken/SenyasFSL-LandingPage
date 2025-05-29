@@ -7,30 +7,30 @@ import Twitter from '../assets/img/Twitter.png'
 function Footer(){
 
     return(
-        <footer className='bg-[#231F20] max-w-full max-h-max flex justify-center items-center text-white/30 text-lg    '>
-           <div className=' w-11/12 border border-amber-50 flex justify-center items-center flex-col'>
-                <div className='w-full flex justify-center items-center'>
+        <footer className='bg-[#231F20] max-w-full h-[21rem] flex justify-center items-center text-white/30 text-lg    '>
+           <div className=' w-11/12 h-11/12 max-w-[2000px]  flex justify-around items-center flex-col relative'>
+                <div className='w-full flex justify-center items-center  '>
                     <div className='w-[40%]'>
-                        <h1>SenyasFSL</h1>
+                        <h1 className='text-[#FF9C00] text-[4rem]'>SenyasFSL</h1>
                     </div>
                     <div className='w-[60%] flex justify-between items-center'>
                         <div>
                             <p>About</p>
-                            <ul>
+                            <ul className='text-white'>
                                 <li>Get the App</li>
                                 <li>Key Features</li>
                             </ul>
                         </div>
                         <div>
                             <p>How To Use</p>
-                            <ul>
+                            <ul className='text-white'>
                                 <li>Learn how to use the app</li>
                                 <li>Tutorials</li>
                             </ul>
                         </div>
                         <div> 
                             <p>Feedbacks</p>
-                            <ul>
+                            <ul className='text-white'>
                                 <li>Share us Your Thoughts</li>
                                 <li>Rate Our App</li>
                             </ul>
@@ -50,9 +50,9 @@ function Footer(){
                     </div>
                 </div>
 
-                <hr />
+                <hr className='bg-white/30 w-[200%]  ' />
 
-                <div className='w-full flex justify-between items-center'>
+                <div className='w-full flex justify-between items-center text-[1.5rem]'>
                     <div className='w-1/2'>
                         <h1>
                             @ 2025 SenyasFSL
