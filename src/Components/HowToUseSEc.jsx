@@ -3,6 +3,7 @@ import Header from './Header.jsx'
 import DownloadBanner from './DownloadBanner.jsx'
 import How from '../assets/img/How.png'
 import DownloadBTN from './DonwloadBTN.jsx'
+import Footer from './Footer.jsx'
 function HowToUseSection (){
 
     useEffect(()=>{
@@ -35,10 +36,11 @@ return(
         </div>
     </div>  
         {/*Start OF Timeline */}
-    <div className='w-full h-max relative '>
+    <div className='w-full h-max relative top-28 mb-96'>
        <div className='pt-[64px]' >
-            <ul className='pt-[100px] '>
+            <ul className='pt-[100px]'>
                 <li className='relative mx-auto my-0 w-[2px] mb-12 
+                bg-GreenSenyas
                 before:bg-[#FFF085]
                   before:absolute
                   before:left-1/2
@@ -46,8 +48,10 @@ return(
                   before:translate-x-[-50%]
                   before:w-4
                   before:h-4
-                  before:rounded-full'>
-                    <div className=' w-[580px] h-[620px] bg-[#EBFFEE]/10 rounded-3xl p-4 text-white text-2xl font-light shadow-[0_0px_20px_#BAA979]'>
+                  before:rounded-full
+                  
+                  '>
+                    <div className=' w-[580px] h-[620px] bg-[#EBFFEE]/10 rounded-3xl p-4 text-white text-2xl font-light shadow-[0_0px_20px_#BAA979] relative right-[50rem] -top-48'>
                         <h3 className='text-[#45BF10] text-[1.5rem] mb-2'>Tips For Success</h3>
                            <ul className='list-disc ml-12'>
                                 <li>
@@ -77,6 +81,7 @@ return(
                 </li>
                 <li className='relative mx-auto my-0 w-[2px] mb-12
                 before:bg-[#FFF085]
+                bg-GreenSenyas
                   before:absolute
                   before:left-1/2
                   before:top-[-32px]
@@ -85,8 +90,8 @@ return(
                   before:h-4
                   before:rounded-full
                 '>
-                    <div className=' w-[580px] h-[450px] '>
-                        <h1 className='text-white text-5xl'>--Getting Started--</h1>
+                    <div className=' w-[580px] h-[450px]  relative left-[15rem] -top-64'>
+                        <h1 className='text-white text-5xl text-center mb-4'>--Getting Started--</h1>
                         <div className='bg-[#EBFFEE]/10 rounded-3xl p-4 text-white text-3xl shadow-[0_0px_20px_#BAA979] font-light'>
                              <DownloadBanner>
                                 <h2 className="uppercase text-[20px] text-[#FDEACC] font-bold">Dowload and Install:</h2>
@@ -107,6 +112,7 @@ return(
                 </li>
 
                 <li className='relative mx-auto my-0 w-[2px] mb-12
+                bg-GreenSenyas
                 before:bg-[#FFF085]
                   before:absolute
                   before:left-1/2
@@ -116,10 +122,10 @@ return(
                   before:h-4
                   before:rounded-full
                 '>
-                    <div className='text-white w-[650px]'>
+                    <div className='text-white w-[650px] h-[700px] relative right-[50rem] -top-[10rem]'>
                         <div className='w-[750px] h-max  text-center'>
-                            <h1 className='text-5xl'>--Understanding the Gameplay--</h1>
-                            <p className='font-light text-[1.25rem] w-[full] text-justify'>SenyasFSL is a progress-based game where you must complete each level before advancing to the next. As you progress, the difficulty increases, allowing you to learn more complex Filipino Sign Language (FSL) signs.</p>
+                            <h1 className='text-5xl mb-4'>--Understanding the Gameplay--</h1>
+                            <p className='font-light text-[1.25rem] w-[full] text-justify mb-8'>SenyasFSL is a progress-based game where you must complete each level before advancing to the next. As you progress, the difficulty increases, allowing you to learn more complex Filipino Sign Language (FSL) signs.</p>
                         </div>
                         <div className=' h-max bg-[#EBFFEE]/10 rounded-3xl p-4  text-3xl shadow-[0_0px_20px_#BAA979] '>
                             <h2 className='font-bold '>Level Structure :</h2>
@@ -160,7 +166,7 @@ return(
                         <p className='font-light text-[1.25rem] ml-4' >This cycle repeats up to Level 50, with increasingly complex signs and words at higher levels.</p>
                     </div>
 
-                    <div >
+                    <div className='relative left-[15rem] -top-[30rem]'>
                          <DownloadBanner className='w-[600px] h-[300px]  flex justify-between items-start flex-col'>
                               
                                 <h1 className="text-[3rem] font-bold w-[550px] text-[#FDEACC]">Learn, Play, and Sign with AI-Powered FSL</h1>
@@ -168,7 +174,7 @@ return(
                                 <DownloadBTN className='w-[400px] h-[65px] bg-[#5F8B4C] text-[#FAF3E0] text-4xl'></DownloadBTN>
                            </DownloadBanner>
 
-                           <div className='w-[580px] h-max  bg-[#EBFFEE]/10 rounded-3xl p-4  shadow-[0_0px_20px_#BAA979] text-white'>
+                           <div className='w-[580px] h-max  bg-[#EBFFEE]/10 rounded-3xl p-4  shadow-[0_0px_20px_#BAA979] text-white relative  top-[10rem] -left-[2rem]'>
                             <h1 className='text-GreenSenyas text-[2rem]'>Technical Support</h1>
                             <h4 className='text-3xl font-light'>If you encounter any issues while using the app, don’t hesitate to reach out:</h4>
                             <ul className='list-disc text-2xl font-light ml-4'>
@@ -180,6 +186,7 @@ return(
                 </li>
 
                 <li className='relative mx-auto my-0 w-[2px] mb-12
+                bg-GreenSenyas
                 before:bg-[#FFF085]
                   before:absolute
                   before:left-1/2
@@ -189,11 +196,11 @@ return(
                   before:h-4
                   before:rounded-full
                 '>
-                    <div className='w-[580px] h-max  text-white'> 
+                    <div className='w-[780px] h-max  text-white relative left-[5rem] -top-28'> 
                         <h1 className='text-5xl text-center'>--Offline Mode--</h1>
                         <p className='text-2xl font-light'>No internet? No problem! SenyasFSL offers an offline mode that allows you to access essential lessons and practice basic signs without connectivity. Sync your progress once you’re back online.</p>
                     </div>
-                    <div className='w-[580px] h-max  text-white bg-[#EBFFEE]/10 rounded-3xl p-4   shadow-[0_0px_20px_#BAA979]'>
+                    <div className='w-[580px] h-max  text-white bg-[#EBFFEE]/10 rounded-3xl p-4   shadow-[0_0px_20px_#BAA979] relative right-[50rem] -top-[5rem]'>
                         <h3 className='text-GreenSenyas text-3xl'>Accessibility Features</h3>
                         <h5 className='text-2xl font-light'>We’ve designed SenyasFSL to be inclusive for all learners:</h5>
                         <ul className='list-disc font-light text-lg ml-6'>
@@ -213,16 +220,16 @@ return(
                   before:h-4
                   before:rounded-full
                 '>
-                    <div className='w-[1024px] h-max p-4 text-white text-center'>
+                    <div className='w-[1580px]  p-4 text-white text-center relative right-[50rem]'>
                         <h1 className='text-5xl' >--Have Fun and Keep Learning!--</h1>
-                        <p className='text-2xl font-light'>SenyasFSL makes learning Filipino Sign Language fun and engaging! Challenge yourself, track your progress, and become fluent in signing as you advance through the game.</p>
+                        <p className='text-2xl font-light text-justify'>SenyasFSL makes learning Filipino Sign Language fun and engaging! Challenge yourself, track your progress, and become fluent in signing as you advance through the game.</p>
                     </div>
                 </li>
 
             </ul>
        </div>
     </div>
-    
+    <Footer></Footer>
     </>
 )
 }

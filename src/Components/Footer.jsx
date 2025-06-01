@@ -50,7 +50,7 @@ function Footer(){
                     </div>
                 </div>
 
-                <hr className='bg-white/30 w-[200%]  ' />
+                <hr className='bg-white/30 w-[100%]  ' />
 
                 <div className='w-full flex justify-between items-center text-[1.5rem]'>
                     <div className='w-1/2'>
