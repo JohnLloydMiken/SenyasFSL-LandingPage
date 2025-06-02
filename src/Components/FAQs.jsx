@@ -17,6 +17,16 @@ function FAQs (){
          'Teachers, advocates, and even members of the Deaf community who want to reinforce their FSL skills through interactive tools.'
         
        ]
+         const list2 = [
+         'AI-Powered Gesture Recognition: Real-time feedback on your sign accuracy.',
+         'Interactive Lessons: Step-by-step FSL lessons with animations and video demonstrations.',
+         'Mini-Games: Fun games like "Match the Sign," "Sign & Spell," and "Speed Signing" to reinforce learning.',
+         'Story-Driven Gameplay: Progress through a narrative-driven adventure where signing is essential to solve challenges.',
+         'Gamification Elements: Earn XP, unlock achievements, and compete on leaderboards.',
+         'Offline Mode: Access basic lessons without an internet connection.',
+         'Customizable Avatars: Personalize your profile and track your progress.'
+        
+       ]
 
        const faqQuestion = [
         'What is SenyasFSL?',
@@ -74,7 +84,9 @@ function FAQs (){
 
             <>
                 <div className='w-full h-screen relative'>
-                    <Header></Header>
+                    <Header/>
+                        
+                   
                     <div style={{backgroundImage: `url(${HeroBGRight})`}} className='w-[550px] h-[1025px] rotate-45 z-0 bg-no-repeat left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2  absolute '>
                         
                     </div>
@@ -83,7 +95,10 @@ function FAQs (){
                         <p className='text-2xl z-50 text-justify font-light'>Got questions? We've got answers! Our FAQ section provides essential information about SenyasFSL, from how the gesture-based gameplay works to accessibility and learning features. Whether you're a beginner, educator, or sign language enthusiast, find everything you need to know here!</p>
                     </div>
 
-                    <div className='w-11/12 h-full mx-auto z-50 relative flex justify-between items-center flex-col max-h-[2000px] border '>
+                    <div className={ 
+                        `
+                        w-11/12 ${expandedIndex === 3 ? 'h-[1300px]' : 'h-full'} mx-auto z-50 relative flex justify-around items-center flex-col max-h-[2000px]  
+                        ` }>
                         
                         {faqQuestion.map((item, index) =>(
                             <div 
@@ -113,7 +128,7 @@ function FAQs (){
 
                                                    {expandedIndex === 3 && (
                                                     <ul className='list-disc ml-8'>
-                                                        {list.map((element , i) => (
+                                                        {list2.map((element , i) => (
                                                             <li key={i} className='text-lg'>{element}</li>
                                                         ))}
                                                     </ul>
@@ -143,79 +158,4 @@ function FAQs (){
             </>
           )
 }
-
-
-/*
- <div className={`${tempClass}`} onClick={newState}>
-                           <div className=' w-full h-max flex justify-between items-center '>
-                             <h1 className= {`text-2xl font-bold ${tempClass === expandedStyle ?  'text-[#FFF085]' : 'text-black'}`}>What is SenyasFSL?</h1>
-                            <img src={tempClass === expandedStyle ? UpRightArrow : DownRightArrow } alt="UP Right Arrow" className='rounded-full' />
-                           </div>
-                             {tempClass === expandedStyle && (
-                            <p className="mt-2  text-white font-light text-2xl w-11/12  relative mx-auto">
-                            SenyasFSL is an innovative mobile application designed to teach Filipino Sign Language (FSL) in an interactive and engaging way. It combines gamification, gesture-based gameplay, and AI-powered sign recognition using TensorFlow to provide real-time feedback and make learning FSL fun and accessible for beginners and learners of all ages.
-                            </p>
-      )}
-                        </div>
-
-                         <div className={`${tempClass}`} onClick={newState}>
-                           <div className=' w-full h-max flex justify-between items-center '>
-                             <h1 className= {`text-2xl font-bold ${tempClass === expandedStyle ?  'text-[#FFF085]' : 'text-black'}`}>Who is SenyasFSL for?</h1>
-                            <img src={tempClass === expandedStyle ? UpRightArrow : DownRightArrow } alt="UP Right Arrow" className='rounded-full' />
-                           </div>
-                             {tempClass === expandedStyle && (
-                            <div className='relative mx-auto'>
-                                    <p className="mt-2  text-white font-light text-2xl w-11/12  ">
-                                        SenyasFSL is designed for:
-                                </p>
-                                <ul className='mt-2  text-white font-light text-2xl w-11/12'>
-                                    <li>Beginners who want to learn FSL.</li>
-                                    <li>Hearing individuals who wish to communicate better with the Deaf community.</li>
-                                    <li>Students aged 7 years and above.</li>
-                                    <li>Teachers, advocates, and even members of the Deaf community who want to reinforce their FSL skills through interactive tools.</li>
-                                </ul>
-                            </div>
-      )}
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>How does the gesture-based gameplay work?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>What features does SenyasFSL offer?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>Is SenyasFSL free to use?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>Are there multiplayer features in SenyasFSL?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>Is SenyasFSL suitable for beginners?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>What devices is SenyasFSL compatible with?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>Does SenyasFSL replace formal FSL training?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-
-                        <div className='w-full h-[70px] flex justify-between items-center bg-FAQBS p-8 rounded-3xl shadow-[0_0px_20px_#000000]/25'>
-                            <h1 className='text-2xl font-bold'>How accurate is the AI-powered gesture recognition?</h1>
-                            <img src={UpRightArrow} alt="UP Right Arrow" className='rounded-full' />
-                        </div>
-*/
 export default FAQs;

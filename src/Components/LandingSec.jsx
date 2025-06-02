@@ -7,9 +7,12 @@ import DownloadBTN from './DonwloadBTN.jsx'
 import Footer from './Footer.jsx'
 import Capibara from '../assets/img/Capibara.png'
 import Hand from '../assets/img/Hand.png'
+import React, { useEffect } from 'react'
 function LandingSec(){
 
-    
+     useEffect(()=>{
+            document.body.style.backgroundColor = "#FAF3E0"
+          }, []);
     return (
 
       <>
@@ -25,7 +28,13 @@ function LandingSec(){
                 <img src={HeroBGRight} alt="" className='h-[1230px] w-[90%] relative left-[12rem]  ' />
                 
                     <div className='absolute w-full top-[20rem] left-[7rem]  '>
-                        <DownloadBanner></DownloadBanner>
+                        <DownloadBanner>
+                                        <h3 className='uppercase font-light text-5xl text-black'>welcome to senyasfsl</h3>
+                                       
+                                        <h1 className="text-[4rem] w-[650px] font-bold text-black mb-2">Learn, Play, and Sign with AI-Powered FSL</h1>
+                                        <p className="text-[2rem] w-[750px] text-black mb-4">An interactive way to explore Filipino Sign Language with AI recognition and gesture-based learning.</p>
+                                        <DownloadBTN className='w-2/4 h-[65px] bg-black text-[#FAF3E0] font-semibold text-2xl'></DownloadBTN>
+                                </DownloadBanner>
                     </div>
 
                     <div className='absolute w-full top-[58rem] left-[7rem] '>
